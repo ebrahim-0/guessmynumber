@@ -1,0 +1,91 @@
+body {
+  background-color: #222;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.header button {
+  padding: 5px 10px;
+  font-size: 40px;
+}
+.header h1 {
+  font-size: 40px;
+  color: #eee;
+}
+.header h1::before {
+  content: "<";
+}
+
+.header h1::after {
+  content: ">";
+}
+.title {
+  font-size: 60px;
+  width: fit-content;
+  margin: 50px auto;
+  color: white;
+}
+hr {
+  background-color: white;
+}
+.secret {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  text-align: center;
+  left: 50%;
+  padding: 20px;
+  font-size: 30px;
+  transform: translateX(-50%);
+  position: relative;
+  top: -40px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.results {
+  display: flex;
+  justify-content: space-evenly;
+}
+.results .guess {
+  display: flex;
+  flex-direction: column;
+}
+.results .guess input {
+  background-color: #222;
+  border: 4px solid #eee;
+  color: white;
+  font-size: 23px;
+  width: 200px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.results .guess button {
+  margin: 30px;
+  padding: 15px;
+  font-size: 23px;
+  cursor: pointer;
+  border: 0;
+}
+.results .guess button:hover {
+  background-color: #ccc;
+}
+
+.results .scores {
+  font-size: 30px;
+  color: #eee;
+}
+
+.results .scores .message {
+  margin: 0 0 70px 0;
+}
